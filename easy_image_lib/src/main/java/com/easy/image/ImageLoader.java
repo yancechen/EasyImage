@@ -19,8 +19,6 @@ import java.util.concurrent.Executors;
 public class ImageLoader {
     ImageCache mImageCache = new ImageCache();
 
-    //todo：如果newFixedThreadPool的参数很大会发生什么？
-    //todo：线程池学习
     ExecutorService mExecutorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     // 获取 UI 线程的 looper
     Handler mHandler = new Handler(Looper.getMainLooper());
