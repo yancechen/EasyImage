@@ -1,0 +1,3 @@
+include ':easy_image_lib'
+include ':app'
+rootProject.name = "EasyImage"
